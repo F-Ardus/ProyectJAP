@@ -75,6 +75,8 @@
   position: fixed;
   z-index: 990;
   height: 10%;
+  margin-left: 0%;
+  transition: margin 1s;
 }
 
 #home {
@@ -209,7 +211,7 @@ article {
   overflow: hidden;
   position: relative;
 	background-color: black;
-	height: auto;
+	height: 100vh;
 }
 
 .divLine:after{
@@ -338,8 +340,8 @@ article {
 }
 
 .hideMenBot {
-  margin-left: -6%;
-  transition: margin 1s;
+  margin-left: -6% !important;
+  transition: margin 0.5s;
 }
 
 /*--Boton---*/

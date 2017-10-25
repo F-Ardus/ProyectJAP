@@ -4,9 +4,10 @@ $( document ).ready(function() {
 	$("#capaModal").hide();
 
 	setTimeout(function(){
-	$("#mainNav").toggleClass("hideNav");
-	$("#wrapper").toggleClass("principal");
-	setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 2000);
+		$("#mainNav").toggleClass("hideNav");
+		$("#wrapper").toggleClass("principal");
+		setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 2000);
+		setTimeout(function(){ $("#botonMenu").toggleClass("hideMenBot"); }, 2250);
 	}, 750);
 
 	$('[data-toggle="tooltip"]').tooltip();
@@ -35,12 +36,14 @@ $( document ).ready(function() {
 		$("#mainNav").toggleClass("hideNav");
 		$("#wrapper").toggleClass("principal");
 		setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 2000);
+		setTimeout(function(){ $("#botonMenu").toggleClass("hideMenBot"); }, 2250);
 	});
 
 	$("#botonMenu").click(function(){
-		$("#mainNav").toggleClass("hideNav");
-		$("#wrapper").toggleClass("principal");
-		$("#botonMenu").toggleClass("hideElement");
+		$("#botonMenu").toggleClass("hideMenBot");
+		setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 750);
+		setTimeout(function(){ $("#mainNav").toggleClass("hideNav"); }, 750);
+		setTimeout(function(){ $("#wrapper").toggleClass("principal"); }, 750);
 	});
 
 });
