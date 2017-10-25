@@ -1,6 +1,14 @@
 $( document ).ready(function() {
 
+
 	$("#capaModal").hide();
+
+	setTimeout(function(){
+	$("#mainNav").toggleClass("hideNav");
+	$("#wrapper").toggleClass("principal");
+	setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 2000);
+	}, 750);
+
 	$('[data-toggle="tooltip"]').tooltip();
 
 	//Agregar y quitar modal de imagenes de datos
@@ -21,6 +29,18 @@ $( document ).ready(function() {
 	});
 	$(".infoPop .closeArrow").click(function(){
 		$(this).parent().addClass("hidenInfo");
+	});
+
+	$("#profileImg").click(function(){
+		$("#mainNav").toggleClass("hideNav");
+		$("#wrapper").toggleClass("principal");
+		setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 2000);
+	});
+
+	$("#botonMenu").click(function(){
+		$("#mainNav").toggleClass("hideNav");
+		$("#wrapper").toggleClass("principal");
+		$("#botonMenu").toggleClass("hideElement");
 	});
 
 });

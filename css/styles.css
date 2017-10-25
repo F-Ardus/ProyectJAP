@@ -1,5 +1,7 @@
 #wrapper {
 	margin: 0;
+  margin-left: 0%;
+  transition: margin 2s;
 }
 
 #capaModal {
@@ -37,6 +39,14 @@
 	src: url("../src/A Sensible Armadillo.ttf");
 }
 
+.hideElement {
+  display: none;
+}
+
+#botonMenu {
+  cursor: pointer;
+}
+
 .container {
 	height: 100vh;
 	position: relative;
@@ -61,9 +71,16 @@
 
 /* General */
 
+#botonMenu {
+  position: fixed;
+  z-index: 990;
+  height: 10%;
+}
+
 #home {
 	margin: 0;
-  margin-left: 15%;
+  margin-left: 0%;
+  transition: margin 2s;
   width: auto;
   overflow: hidden;
   position: relative;
@@ -77,6 +94,8 @@
 }
 
 #mainNav {
+  margin-left: 0%;
+  transition: margin 2s;
 	float: left;
 	padding: 0;
 	width: 15%;
@@ -184,7 +203,8 @@ article {
 
 #second {
   margin: 0;
-  margin-left: 15%;
+  margin-left: 0%;
+  transition: margin 2s;
   width: auto;
   overflow: hidden;
   position: relative;
@@ -298,12 +318,28 @@ article {
 
 #third {
 	margin: 0;
-  margin-left: 15%;
+  margin-left: 0%;
+  transition: margin 2s;
   width: auto;
   overflow: hidden;
   position: relative;
 	background-color: black;
 	height: 200vh;
+}
+
+.principal {
+  margin-left: 15% !important;
+  transition: margin 2s ;
+}
+
+.hideNav {
+  margin-left: -15% !important;
+  transition: margin 2s;
+}
+
+.hideMenBot {
+  margin-left: -6%;
+  transition: margin 1s;
 }
 
 /*--Boton---*/
