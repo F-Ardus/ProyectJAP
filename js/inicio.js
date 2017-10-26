@@ -12,16 +12,10 @@ $( document ).ready(function() {
 
 	$('[data-toggle="tooltip"]').tooltip();
 
-	//Agregar y quitar modal de imagenes de datos
-	$("#mainDatos img").click(function(){
-		$("#capaModal").show();
-		$(this).addClass("imgModal"); 
-	});
-	$("#capaModal img, #capaModal").click(function(){
-		$("#capaModal").hide();
-		$("#mainDatos img").removeClass("imgModal");
-	});
-
+  $('#exampleModal').on('show.bs.modal', function (e) {
+    var image = $(e.relatedTarget).attr('src');
+    $(".modalImg").attr("src", image);
+  });
 
 	//Mostrar y ocultar Datos extra
 	$("#mainDatos a").click(function(){
@@ -45,5 +39,9 @@ $( document ).ready(function() {
 		setTimeout(function(){ $("#mainNav").toggleClass("hideNav"); }, 750);
 		setTimeout(function(){ $("#wrapper").toggleClass("principal"); }, 750);
 	});
+
+	$('#myModal').on('shown.bs.modal', function () {
+  	$('#myInput').trigger('focus')
+	})
 
 });

@@ -6,8 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body  data-spy="scroll" data-target="#mainNav" data-offset="0">
-		<div id="capaModal">
-			<img src="src/close.png">
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		        <form>
+		          <img class="modalImg" src="">
+		        </form>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 		<nav id="mainNav" class="navbar container col-2">
 			<img src="">
@@ -73,7 +81,7 @@
 				      <div class="scrollCol">
 				      	<p>Las competencias son conocimientos y habilidades que tiene una persona. Estas son diferentes en cada uno y son necesarias para desarrollarse en cualquier tipo de trabajo o actividad.
 								</p>
-								<img src="src/competencias.jpg">
+								<img class="imgModal" data-toggle="modal" data-target="#exampleModal" src="src/competencias.jpg">
 								<p>Estas pueden ser divididas en varias categorias como: competencias basicas, ciudadanas y laborales. Las competencias transversales son aquellas comunes o genericas a la mayoria de profesiones.
 								</p>
 								<a id="info1a" data-info = "1" href="#second">
@@ -90,7 +98,7 @@
 				      <div>
 				      	<p>En mi opinion personal considero que para llegar al exito es necesaria una combinacion de: constancia, perseverancia, pacienscia, motivacion, trabajo en equipo, valores, habilidad y honestidad.
 								</p>
-								<img src="src/caminoExito.jpg">
+								<img class="imgModal" data-toggle="modal" data-target="#exampleModal" src="src/caminoExito.jpg">
 								<p>Si bien quizas hay gente que alcanza sus metas sin alguna de estas caracteristicas creo que son muy importantes para el desarrollo no solo personal sino que tambien laboral de cualquier individuo.
 								</p>
 				      </div>
@@ -99,7 +107,7 @@
 				    	<h3>Conocimiento</h3>
 				      <p>En este curso aprendimos lo fundamental para el desarrollo de cualquier pagina web (sin contar backend).
 							</p>
-							<img src="src/nubePalabras.png">
+							<img class="imgModal" data-toggle="modal" data-target="#exampleModal" src="src/nubePalabras.png">
 							<p>Desde el mas basico HTML y su sintaxis, CSS, Javascript y Jquery, y la utilizacion de frameworks como Bootstrap.
 							</p>
 							<a data-info = "3" href="#second">
@@ -114,7 +122,7 @@
 				    	<h3>Mentores</h3>
 				      <p>Durante el curso de JAP tuvimos el placer de contar con 2 profesores muy dedicados y a los cuales le pudimos realizar entrevistas con nuestras dudas.
 							</p>
-							<img src="src/Img1.jpg">
+							<img class="imgModal" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" src="src/Img1.jpg">
 							<p>Rita Marquisio y Sebastian Caggiano nos enseñaron sobre ambos lados del mundo laboral, tanto lo tecnico como todo aquello que es necesario para saber comportarse, presentarse y desarrollarse en un ambiente laboral. Tambien tuvimos la oportunidad de ver otras entrevistas realizadas a dos personas que saben del tema como son Fabian Coito y Santiago Fernandez.
 							</p>
 							<a data-info = "4" href="#second">
