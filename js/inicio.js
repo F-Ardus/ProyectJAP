@@ -26,7 +26,7 @@ $( document ).ready(function() {
 		$(this).parent().addClass("hidenInfo");
 	});
 
-	$("#profileImg").click(function(){
+	$("#menuClose").click(function(){
 		$("#mainNav").toggleClass("hideNav");
 		$("#wrapper").toggleClass("principal");
 		setTimeout(function(){ $("#botonMenu").toggleClass("hideElement"); }, 2000);

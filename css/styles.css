@@ -56,7 +56,9 @@
 /* General */
 
 .modalImg {
-  max-width: 100%;
+  max-width: 150%;
+  left: 50%;
+  transform: translate(-18%, 0%);
 }
 
 #botonMenu {
@@ -256,6 +258,9 @@ article {
 }
 
 .closeArrow {
+  position: absolute;
+  top: 2%;
+  right: 2%;
   height: 3%;
   width: auto;
   margin: 1%;
@@ -264,7 +269,7 @@ article {
 }
 
 .popContent {
-	padding: 2%;
+	margin: 2%;
 	height: 97%; 
 }
 
@@ -318,6 +323,18 @@ article {
 .hideMenBot {
   margin-left: -6% !important;
   transition: margin 0.5s;
+}
+
+#menuClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10%;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 0px;
 }
 
 /*--Boton---*/
