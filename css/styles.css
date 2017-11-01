@@ -283,10 +283,11 @@ article {
 }
 
 #infoCompetencias img {
-	width: 100%;
-  height: auto;
-  margin: auto;
-  margin-top: 10%;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 #third {
@@ -325,6 +326,12 @@ article {
 
 .modal-body {
   padding: 0px;
+}
+
+.textoVer {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 /*--Boton---*/
