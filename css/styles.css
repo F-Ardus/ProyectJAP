@@ -135,7 +135,7 @@
 }
 
 .jumbotron {
-		background-color: transparent;
+		background-color: rgba(0,0,0,0.5);
     color: #f8f9fa;
     font-family: fuente;
     top: 50%;
@@ -192,6 +192,7 @@ article {
   position: relative;
 	background-color: black;
 	height: 100vh;
+  min-height: fit-content;
 }
 
 .divLine:after{
@@ -207,6 +208,13 @@ article {
 #mainDatos {
 	height: 100%;
 	padding: 2%;
+  min-height: fit-content;
+}
+
+#mainDatos .row{
+  min-height: fit-content;
+  height: 100%;
+  contain: content;
 }
 
 #mainDatos h3 {
@@ -223,11 +231,6 @@ article {
 	width: 100%;
 	transition: width 0.5s;
 	cursor: pointer;
-}
-
-.row {
-	height: 100%;
-	contain: content;
 }
 
 .infoPop {
