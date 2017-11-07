@@ -46,9 +46,11 @@
 /* General */
 
 .modalImg {
+  position: absolute;
   max-width: 150%;
+  max-height: 90vh;
   left: 50%;
-  transform: translate(-18%, 0%);
+  transform: translate(-50%, 0%);
 }
 
 #botonMenu {
@@ -263,7 +265,8 @@ article {
 
 .popContent {
 	margin: 2%;
-	height: 97%; 
+	height: 97%;
+  display: grid;
 }
 
 .popContent p, .popContent h3 {
@@ -274,23 +277,44 @@ article {
 
 .popContent p {
 	text-align: justify;
-	font-size: 25px; 
+	font-size: 25px;
+  color: #006cf8;
+  font-weight: bolder; 
+}
+
+.popContent h3 {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .popContent .row-md-6 {
 	height: 50%;
+  width: -webkit-fill-available;
 }
 
-#infoCompetencias .row-md-6 {
-	width: -webkit-fill-available;
-}
-
-#infoCompetencias img {
+.popContent img {
   height: 100%;
   max-width: 100%;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
+  object-fit: contain;
+}
+
+.popContent .row-md-3 {
+  display: flex;
+}
+
+#infoConocimiento {
+  display: flex;
+}
+
+#infoMentores div {
+  margin-bottom: 1%;
+}
+
+#infoMentores .col-md-9 {
+  margin: auto;
 }
 
 #third {
