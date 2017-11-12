@@ -1,7 +1,16 @@
 $( document ).ready(function() {
 
+	$("#flipper").mouseover(function(){
+		$("#tips").addClass("hideElement");
+		$("#tips2").toggleClass("hideElement");
+		$("#thirdTitulo h2").toggleClass("hideElement");
+	});
 
-	$("#capaModal").hide();
+	$("#flipper").mouseout(function(){
+		$("#tips").removeClass("hideElement");
+		$("#tips2").toggleClass("hideElement");
+		$("#thirdTitulo h2").toggleClass("hideElement");
+	});
 
 	setTimeout(function(){
 		$("#mainNav").toggleClass("hideNav");
