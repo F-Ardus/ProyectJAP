@@ -266,6 +266,10 @@ article {
   padding: 2%;
 }
 
+.infoPop article {
+  overflow-y: auto;
+}
+
 .hidenInfo {
 	margin-left: 100%;
 	transition: margin 2s;
@@ -345,6 +349,11 @@ article {
   position: relative;
 	background-color: black;
 	height: 100vh;
+  min-height: fit-content;
+}
+
+#third main {
+  min-height: fit-content;
 }
 
 .principal {
@@ -597,6 +606,7 @@ article {
 /* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
+  max-height: -webkit-fill-available;
 }
 
 #flipImg {
@@ -612,6 +622,8 @@ article {
   padding: 10px;
   box-sizing: border-box;
   border: 5px solid #006cf8;
+  overflow-y: auto;
+  max-height: -webkit-fill-available;
 }
 
 
