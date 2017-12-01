@@ -255,7 +255,6 @@ article {
   overflow: hidden;
   position: relative;
 	background-color: black;
-	height: 100vh;
   min-height: 100vh;
   max-height: fit-content;
 }
@@ -271,7 +270,6 @@ article {
 }
 
 #mainDatos {
-	height: 100%;
 	padding: 2%;
   min-height: 100vh;
   max-height: fit-content;
@@ -310,6 +308,7 @@ article {
   margin: 0;
   transition: margin 2s;
   padding: 2%;
+  overflow: overlay;
 }
 
 #infoMentores article {
