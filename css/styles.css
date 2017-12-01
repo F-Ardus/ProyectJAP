@@ -139,7 +139,6 @@ form label {
   color: #B8860B;
 }
 
-
 #mainNav {
   margin-left: 0%;
   transition: margin 2s;
@@ -257,7 +256,8 @@ article {
   position: relative;
 	background-color: black;
 	height: 100vh;
-  min-height: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
 }
 
 .divLine:after{
@@ -273,13 +273,15 @@ article {
 #mainDatos {
 	height: 100%;
 	padding: 2%;
-  min-height: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
 }
 
 #mainDatos .row{
   min-height: fit-content;
   height: 100%;
   contain: content;
+  max-height: fit-content;
 }
 
 #mainDatos h3 {
@@ -310,7 +312,7 @@ article {
   padding: 2%;
 }
 
-.infoPop article {
+#infoMentores article {
   overflow-y: auto;
 }
 
@@ -336,7 +338,7 @@ article {
   display: grid;
 }
 
-.popContent p, .popContent h3 {
+.popContent p, .popContent h3, h1 {
 	font-family: handwrite;
 	color: SaddleBrown;
 	text-align: center;
@@ -349,7 +351,7 @@ article {
   font-weight: bolder; 
 }
 
-.popContent h3 {
+.popContent h3, h1{
   font-weight: bold;
   text-decoration: underline;
 }
@@ -382,6 +384,10 @@ article {
 
 #infoMentores .col-md-9 {
   margin: auto;
+}
+
+#infoObjetivos p {
+  text-align: center;
 }
 
 #third {
@@ -671,3 +677,693 @@ article {
 }
 
 
+/*Cambios Para Celulares!*/
+
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    margin: 0px !important;
+    transition: margin 2s;
+  }
+
+  /*hr {
+    display: block;
+    height: 0px;
+    border: 0;
+    border-top: 5px solid #0147a5;
+    margin: 0em 0;
+    padding: 0;
+  }*/
+
+  @font-face {
+    font-family: fuente;
+    src: url("../src/NovaSlim.ttf");
+  }
+
+  @font-face {
+    font-family: handwrite;
+    src: url("../src/A Sensible Armadillo.ttf");
+  }
+  .circle {
+    border-radius: 50%;
+    width: 6%;
+    background-color: #B8860B;
+  }
+
+  .circle h2 {
+    text-decoration: none;
+  }
+
+  .circle2 {
+    border-radius: 50%;
+    width: 6%;
+    background-color: #006cf8;
+  }
+
+  .circle2 h2 {
+    text-decoration: none;
+  }
+
+  .hideElement {
+    display: none !important;
+  }
+
+  #botonMenu {
+    display: none;
+  }
+
+  .container {
+    height: 100vh;
+    position: relative;
+  }
+
+  .box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* General */
+
+  .modalImg {
+    position: absolute;
+    max-width: 150%;
+    max-height: 90vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  #home {
+    margin: 0;
+    margin-left: 0%;
+    transition: margin 2s;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    height: fit-content;    
+  }
+
+  #third {
+    background-color: black;
+    height: 200vh;
+  }
+
+  #fourth {
+    background-color: black;
+    max-height: 200vh;
+    margin: 0;
+    margin-left: 0%;
+    transition: margin 2s;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: fit-content;
+  }
+
+  #fondoForm {
+    background-color: #007bff;
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    border-radius: 1%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #fourth form {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-control {
+    font-family: fuente;  
+    border: 2px solid #B8860B;
+  }
+
+  form label {
+    font-family: fuente;
+    color: #B8860B;
+  }
+
+  #mainNav {
+    width: 100%;
+    position: fixed;
+    background-color: #494f5c;
+    top: 0;
+    left: 0;
+    height: 5%;
+    min-width: 100%;
+    margin: 0px !important;
+    transition: none;
+    position: fixed;
+    z-index: 1000;
+    background-image: none;
+  }
+
+  #mainNav img {
+    display: none;
+  }
+
+  #profileImg {
+    top: 15%;
+    border-radius: 50%;
+    -moz-box-shadow:    inset 0 0 50px #000000;
+    -webkit-box-shadow: inset 0 0 50px #000000;
+    box-shadow:         inset 0 0 50px #000000;
+    margin: 1%;
+    height: auto;
+    width: 80%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+  }
+
+  #mainNav ul {
+    display: inherit;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+
+  #mainNav li {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #mainNav a {
+    text-align: center;
+    font-size: 200%;
+    color: #888;
+    font-family: fuente;
+    font-weight: bold;
+    height: 100%;
+  }
+
+  #mainNav li a:hover {
+    color:  #888;
+    text-shadow: 1px 1px #000000;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: none;  
+  }
+
+  #jumbo h1 {
+    color: #B8860B;
+  }
+
+  .jumbotron {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color: #f8f9fa;
+    font-family: fuente;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px #000000;
+  }
+
+  #carousel {
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    top: 0px;
+    left: 0px;
+    transform: translate(0%, 0%);
+  }
+
+
+  li a.active {
+    color: #c7c9cc !important;
+    background-color: #494f5c !important;
+    text-align: center;
+    transition: color 0.5s ease;
+    box-shadow: none;
+  }
+
+  #idiomas {
+    top: 95%;
+  }
+
+
+  .bandera {
+    height: 2%;
+    width: unset;
+    margin: 5px;
+  }
+
+  .bandera img {
+    height: 100%;
+    width: 100%;
+  }
+
+  article {
+    color: white;
+    font-family: fuente;
+  }
+
+  #second {
+    margin: 0;
+    margin-left: 0%;
+    transition: margin 2s;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: fit-content;
+    max-height: fit-content;
+  }
+
+  .divLine:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    border-top: 2px solid #006cf8;
+    z-index: 1;
+  }
+
+  #mainDatos {
+    height: 100%;
+    padding: 2%;
+    min-height: fit-content;
+    max-height: fit-content;
+  }
+
+  #mainDatos .row{
+    min-height: fit-content;
+    height: 100%;
+    contain: content;
+    max-height: fit-content;
+  }
+
+  #mainDatos h3 {
+    text-decoration-line: underline;
+    color: #B8860B;
+    text-align: center;
+  }
+
+  #mainDatos p {
+    text-align: justify;
+  }
+
+  #mainDatos img {
+    width: 100%;
+    transition: width 0.5s;
+    cursor: pointer;
+  }
+
+  .infoPop {
+    background-image: url("../src/paperBack.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transition: margin 2s;
+    padding: 2%;
+  }
+
+  #infoMentores article {
+    overflow-y: unset;
+  }
+
+  .hidenInfo {
+    margin-left: 100%;
+    transition: margin 2s;
+  }
+
+  .closeArrow {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    height: 3%;
+    width: auto;
+    margin: 1%;
+    cursor: pointer;
+    transform: scaleX(-1);
+  }
+
+  .popContent {
+    margin: 2%;
+    height: 97%;
+    display: grid;
+  }
+
+  .popContent p, .popContent h3, h1 {
+    font-family: handwrite;
+    color: SaddleBrown;
+    text-align: center;
+  }
+
+  .popContent p {
+    text-align: justify;
+    font-size: 25px;
+    color: #006cf8;
+    font-weight: bolder; 
+  }
+
+  .popContent h3, h1{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .popContent .row-md-6 {
+    height: 50%;
+    width: -webkit-fill-available;
+  }
+
+  .popContent img {
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    object-fit: contain;
+  }
+
+  .popContent .row-md-3 {
+    display: flex;
+  }
+
+  #infoConocimiento {
+    display: flex;
+    overflow: overlay;
+  }
+
+  #infoMentores {
+    overflow: overlay;
+  }
+
+  #infoMentores div {
+    margin-bottom: 1%;
+  }
+
+  #infoMentores .col-md-9 {
+    margin: auto;
+  }
+
+  #infoObjetivos p {
+    text-align: center;
+  }
+
+  #third {
+    margin: 0;
+    margin-left: 0%;
+    transition: margin 2s;
+    width: auto;
+    max-height: fit-content;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: fit-content;
+  }
+
+  #third main {
+    min-height: fit-content;
+  }
+
+  .principal {
+    margin-left: 15% !important;
+    transition: margin 2s ;
+  }
+
+  .hideNav {
+    margin-left: -15% !important;
+    transition: margin 2s;
+  }
+
+  .hideMenBot {
+    margin-left: -6% !important;
+    transition: margin 0.5s;
+  }
+
+  #menuClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10%;
+    cursor: pointer;
+  }
+
+  .modal-body {
+    padding: 0px;
+  }
+
+  .textoVer {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  #modalCv div {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  #modalCv div div{
+    height: 90vh;
+    width: 200%;
+  }
+
+  #modalCv div object {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+
+  #third h2 {
+    color: #B8860B;
+    text-align: center;
+    text-decoration: underline;
+    font-family: fuente;
+    margin: 2%;
+  }
+
+  #tips {
+    display: inline-block;
+  }
+
+  #tips p {
+    word-break: break-word;
+    color: white;
+    font-family: fuente;
+  }
+
+  #tips div {
+    float: left;
+    margin: 5px;
+  }
+
+  #tips h2 {
+    color: #006cf8;
+  }
+
+  #tips2 {
+    float: right;
+  }
+
+  #tips2 p {
+    word-break: break-word;
+    color: white;
+    font-family: fuente;
+  }
+
+  #tips2 div {
+    float: left;
+    margin: 5px;
+  }
+  /*--Boton---*/
+
+
+  #mainDatos a {
+    position: fixed;
+    cursor: pointer;
+    bottom: 0;
+    left: 50%;
+    color: white;
+    transform: translate3d(-50%, 0%, 0);
+    padding: 0.7em calc(0.7em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1.0em;
+    letter-spacing: 0.07em;
+  }
+  #mainDatos a .text {
+    font-family: proxima-nova;
+    transform: translate3d(0, 0.7em, 0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+
+  #mainDatos a:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: calc(0.7em * 1.2);
+    right: calc(0.7em * 1.2);
+    height: 3px;
+    background: #B8860B;
+    z-index: -1;
+    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+    transform-origin: left;
+  }
+
+  .line {
+    position: absolute;
+    background: #B8860B;
+  }
+  .line.-right, .line.-left {
+    width: 3px;
+    bottom: -3px;
+    top: -3px;
+    transform: scale3d(1, 0, 1);
+  }
+  .line.-top, .line.-bottom {
+    height: 3px;
+    left: -3px;
+    right: -3px;
+    transform: scale3d(0, 1, 1);
+  }
+  .line.-right {
+    right: -3px;
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+    transform-origin: top;
+  }
+  .line.-top {
+    top: -3px;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+  }
+  .line.-left {
+    left: -3px;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+  }
+  .line.-bottom {
+    bottom: -3px;
+    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+    transform-origin: right;
+  }
+
+  #mainDatos a:hover .text,
+  #mainDatos a:active .text {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+  #mainDatos a:hover:after,
+  #mainDatos a:active:after {
+    transform: scale3d(0, 1, 1);
+    right: -3px;
+    left: -3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  }
+  #mainDatos a:hover .line,
+  #mainDatos a:active .line {
+    transform: scale3d(1, 1, 1);
+  }
+  #mainDatos a:hover .line.-right,
+  #mainDatos a:active .line.-right {
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+    transform-origin: bottom;
+  }
+  #mainDatos a:hover .line.-top,
+  #mainDatos a:active .line.-top {
+    transition: transform 0.08s linear 0.4s;
+    transform-origin: right;
+  }
+  #mainDatos a:hover .line.-left,
+  #mainDatos a:active .line.-left {
+    transition: transform 0.08s linear 0.48s;
+    transform-origin: top;
+  }
+  #mainDatos a:hover .line.-bottom,
+  #mainDatos a:active .line.-bottom {
+    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+    transform-origin: left;
+  }
+
+  /* entire container, keeps perspective */
+  .flip-container {
+    perspective: 1000px;
+    width: 31%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+  /*.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+  }*/
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+    max-height: -webkit-fill-available;
+  }
+
+  #flipImg {
+    max-height: 90vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 5px solid #B8860B;
+  }
+
+  #flipArt {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid #006cf8;
+    overflow-y: auto;
+    max-height: -webkit-fill-available;
+  }
+
+    
+}
