@@ -773,7 +773,7 @@ article {
 
   .modalImg {
     position: absolute;
-    max-width: 150%;
+    max-width: 180%;
     max-height: 90vh;
     left: 50%;
     transform: translate(-50%, 0%);
