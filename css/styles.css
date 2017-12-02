@@ -311,8 +311,38 @@ article {
   overflow: overlay;
 }
 
+#infoMentores {
+    display: unset;
+}
+
+#infoMentores div {
+  height: 100%;
+  margin: 0;
+  float: left;
+}
+
+#infoMentores div div {
+  height: 25%;
+  width: 100%;
+}
+
+#infoMentores div img {
+  height: -webkit-fill-available;
+  position: unset;
+  left: 0;
+  transform: translate(0%, 0%);
+}
+
 #infoMentores article {
   overflow-y: auto;
+}
+
+#mentoresText {
+  height: 100%;
+}
+
+#mentoresText article {
+  height: 25%;
 }
 
 .hidenInfo {
@@ -992,6 +1022,10 @@ article {
     margin: 0;
     transition: margin 2s;
     padding: 2%;
+  }
+
+  #infoMentores {
+    display: unset;
   }
 
   #infoMentores article {
