@@ -223,22 +223,6 @@ li a.active {
 	text-shadow: 1px 1px #000000; 
 }
 
-#idiomas {
-	top: 95%;
-}
-
-
-.bandera {
-	height: 2%;
-	width: unset;
-	margin: 5px;
-}
-
-.bandera img {
-	height: 100%;
-	width: 100%;
-}
-
 article {
 	color: white;
 	font-family: fuente;
@@ -946,22 +930,6 @@ article {
     text-align: center;
     transition: color 0.5s ease;
     box-shadow: none;
-  }
-
-  #idiomas {
-    top: 95%;
-  }
-
-
-  .bandera {
-    height: 2%;
-    width: unset;
-    margin: 5px;
-  }
-
-  .bandera img {
-    height: 100%;
-    width: 100%;
   }
 
   article {
